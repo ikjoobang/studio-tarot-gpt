@@ -267,6 +267,7 @@ app.get('/', (req, res) => {
   });
 });
 
+
 app.listen(PORT, () => {
   console.log(`✨ 타로 GPT 서버 시작됨: http://localhost:${PORT}`);
   console.log(`🔑 OpenAI API 키: ${process.env.OPENAI_API_KEY ? '설정됨 ✅' : '설정 안됨 ❌'}`);
