@@ -1,0 +1,22 @@
+{
+  "name": "tarot-gpt-service",
+  "version": "1.0.0",
+  "description": "AI 타로 상담 웹서비스 - GPT-3.5 연동",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["tarot", "gpt", "ai", "fortune"],
+  "author": "ikjoobang@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
