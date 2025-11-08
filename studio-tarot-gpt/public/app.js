@@ -65,13 +65,13 @@ const Elements = {
 // ===== 3. API 호출 함수 =====
 const API = {
   async getCards() {
-    const response = await fetch('/api/cards');
+    const response = await fetch(`${API_BASE}/api/cards`);
     if (!response.ok) throw new Error('카드 데이터를 불러올 수 없습니다.');
     return await response.json();
   },
   
   async getReading(cards, question, spreadType) {
-    const response = await fetch('/api/reading', {
+    const response = await fetch(\${API_BASE}/api/`reading', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ cards, question, spreadType })
@@ -81,7 +81,7 @@ const API = {
   },
   
   async getDailyFortune(birthDate = null) {
-    const response = await fetch('/api/daily-fortune', {
+    const response = await fetch(\${API_BASE}/api/`daily-fortune', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ birthDate })
